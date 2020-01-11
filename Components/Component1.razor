@@ -1,0 +1,6 @@
+﻿<h3 @attributes="AdditionalAttributes" >Component1</h3>
+@code {
+    [Parameter]
+    public object Tag { get; set; }
+    [Parameter(CaptureUnmatchedValues = true)] public IReadOnlyDictionary<string, object> AdditionalAttributes { get; set; }
+}
